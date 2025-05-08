@@ -1,6 +1,34 @@
-# Nearest Neighbor method for solving traveling salesman problem
-In this method, the first city is selected (randomly or manually), then the city with the smallest distance is selected, and so on until a complete bypass.
-This method is deterministic and not accurate. The decision depends on the choice of the first city. No other dependencies were found.
-# Метод ближайшего соседа для решения задачи коммивояжера
-В данном методе выбирается (случайно или в ручную) первый город, после выбирается город с наименьшим расстоянием и так до полного обхода.
-Данный метод детерминированный и не точный. Решение зависит от выбора первого города. Других зависимостей не было обнаружено.
+# Метод ближайшего соседа для задачи коммивояжёра (TSP)
+
+## Описание
+
+Реализация жадного алгоритма ближайшего соседа для приближённого решения задачи коммивояжёра (Traveling Salesman Problem). Метод проходит по вершинам, каждый раз выбирая ближайшую непосещённую точку, формируя маршрут.
+
+Не гарантирует оптимальности, но даёт быстрое приближённое решение, подходящее для задач с ограничениями по времени.
+
+## Что реализовано
+
+* Построение матрицы расстояний между вершинами
+* Жадное построение маршрута от случайной стартовой точки
+* Расчёт длины итогового маршрута
+* Вывод маршрута в консоль
+
+## Стек
+
+* Python 3
+* Стандартные библиотеки: `random`, `math`
+
+## Как использовать
+
+Запустить `nearest_neighbor_tsp.py`. В коде можно изменить:
+
+* количество точек
+* координаты городов (по умолчанию — случайные)
+* способ инициализации
+
+## Контакты
+
+Никитин Евгений
+Telegram: \[[https://t.me/Xobortz](https://t.me/Xobortz)]
+Email: \[[genaj.2000@yandex.ru](mailto:genaj.2000@yandex.ru)]
+GitHub: [https://github.com/XOBORT](https://github.com/XOBORT)
